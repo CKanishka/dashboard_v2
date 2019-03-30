@@ -21,6 +21,8 @@ db.connect(err=>{
     }
 });
 
+app.get('/',(req,res)=>{res.send("The app is connected")})
+
 app.get('/data',(req,res)=>{
     var sql = 'SELECT * FROM data';
     db.query(sql, (err, result)=>{
@@ -51,6 +53,6 @@ app.get('/data_pie',(req,res)=>{
 });
 });
 
-app.listen(8000,()=>{
-    console.log('server is running on port 8000');
+app.listen(process.env.PORT || 3000,()=>{
+    console.log(`server is running on port ${process.env.PORT}`);
 })
