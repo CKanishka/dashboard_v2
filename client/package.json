@@ -8,7 +8,7 @@
     "react-coverflow": "^0.2.17",
     "react-dom": "^16.6.3",
     "react-fusioncharts": "^3.0.0",
-    "react-scripts": "2.1.1",
+    "react-scripts": "5.0.1",
     "tachyons": "^4.11.1"
   },
   "scripts": {
